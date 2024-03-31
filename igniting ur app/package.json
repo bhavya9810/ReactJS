@@ -1,0 +1,30 @@
+{
+  "name": "first_npm_package",
+  "version": "1.0.0",
+  "description": "this is first time working on react and creating a package",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest",
+    "start": "rm -rf .parcel-cache && parcel",
+    "build": "rm -rf .parcel-cache && parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/bhavya9810/ReactJS.git)"
+  },
+  "keywords": [
+    "react",
+    "package",
+    "first_package"
+  ],
+  "author": "Bhavya Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
