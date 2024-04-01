@@ -2,11 +2,10 @@
   "name": "first_npm_package",
   "version": "1.0.0",
   "description": "this is first time working on react and creating a package",
-  "main": "App.js",
   "scripts": {
     "test": "jest",
-    "start": "rm -rf .parcel-cache && parcel",
-    "build": "rm -rf .parcel-cache && parcel build"
+    "start": "rm -rf .parcel-cache && parcel index.html",
+    "build": "rm -rf .parcel-cache && parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -26,5 +25,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserslist": [
+    "last 2 version"
+  ]
 }
