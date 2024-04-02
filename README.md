@@ -24,3 +24,12 @@ All about react and its practice-projects
 - JSX converts into React.createElement() (Babel transpiles JSX into React.createElement)
 - then it converts into React Elements (objects).
 - then using root.render method it converts in html elements.
+
+#React Component
+
+- React has 2 types of component  
+  -Class based component(old way to create component)
+  -Functional component(new way to creating component)
+
+- Functional component is just a javascript function
+-
