@@ -1,3 +1,35 @@
-#heading {
-  color: red;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#header {
+  background-color: blanchedalmond;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+#search {
+  all: unset;
+  height: 30px;
+  border-radius: 5px;
+  width: 250px;
+  background-color: transparent;
+  border: 2px solid black;
+  padding-left: 12px;
+}
+
+#search::placeholder {
+  color: black;
 }
