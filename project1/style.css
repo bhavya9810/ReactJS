@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head {
+  background-color: #000000;
+  margin-bottom: 5rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 8rem;
+}
+
+.logo-container {
+  max-width: 100px;
+  max-height: 100px;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}
+.navItems {
+  position: relative;
+  top: -8px;
+}
+
+.navItems ul {
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  margin-inline: 2em;
+  list-style-type: none;
+}
+
+.navItems ul li {
+  padding-inline: 0.7em;
+  color: white;
+  cursor: pointer;
+}
+.header-items {
+  all: unset;
+}
+.bodyHeader1 {
+  display: flex;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.searchBar {
+  width: 16rem;
+  height: 2rem;
+}
+
+.restaurant-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+.restaurant-card {
+  width: 220px;
+  border-radius: 8px;
+  padding: 4px;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+.restaurant-card:hover {
+  border: 1px solid black;
+}
+.restaurant-img {
+  border-radius: 8px;
+  width: 100%;
+  height: 45%;
+}
+
+.title {
+  all: unset;
+  margin-bottom: 0.6em;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 9px;
+  color: white;
+  background-color: green;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+.rating-full {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.restaurant-card h5 {
+  margin-bottom: 10px;
+}
+
+.filter {
+  margin-left: 8rem;
+}
+
+.btn-filter {
+  cursor: pointer;
+  margin-inline: 5px;
+  height: 2rem;
+}
+
+.shimmer-container-outer {
+  max-width: 1300px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.shimmer-side-bar {
+  width: 32%;
+  height: 100%;
+  border-inline: 1px solid #f0f0f0;
+}
+
+.side-card {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 8px;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 100%;
+}
+
+.rectangle {
+  width: 100px;
+  height: 20px;
+  background-color: #f0f0f0;
+}
+
+.card-side-1 {
+  background-color: #f0f0f0;
+}
+.card-side-1 .circle,
+.card-side-1 .rectangle {
+  background-color: white;
+}
+
+.shimmer-container-inner {
+  padding-left: 3rem;
+  display: flex;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.shimmer-cards {
+  width: 200px;
+  height: 380px;
+  background-color: #f0f0f0;
+}
+
+.shimmer-heading1 {
+  margin-top: 280px;
+  margin-left: 12px;
+  width: 120px;
+  height: 10px;
+  background-color: white;
+}
+
+.shimmer-heading2 {
+  margin-top: 12px;
+  margin-left: 12px;
+  width: 80px;
+  height: 10px;
+  background-color: white;
+}
+
+.login {
+  all: unset;
+  background-color: white;
+  color: #000000;
+  padding: 4px;
+  margin-left: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-card {
+  margin-inline: auto;
+  margin-bottom: 5px;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+.user-card.class-component {
+  border: 2px solid red;
+}
+
+.countButton {
+  display: flex;
+  gap: 16px;
+  /* background-color: red; */
+}
