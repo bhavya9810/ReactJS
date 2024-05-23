@@ -1,9 +1,16 @@
 import { Fragment } from "react";
 import { CDN_URL, VEG_SYMBOL, NON_VEG_SYMBOL } from "../utils/constants";
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
 
 const ItemListRestaurantCateogry = ({ itemData, dummy2 }) => {
   console.log(itemData);
   console.log("inside itemList", dummy2);
+  const dispatch = useDispatch();
+  // const handleAddItem = dispatch(addItem);
+  const handleAddItem = (item) => {
+    dispatch(addItem(item?.card?.info?.name));
+  };
   return (
     <div>
       <div>
@@ -57,7 +64,10 @@ const ItemListRestaurantCateogry = ({ itemData, dummy2 }) => {
             <div className="w-3/12">
               <div className="absolute pt-4 w-3/12">
                 {" "}
-                <button className="bg-white font-bold text-xl text-green-600 border rounded-md w-28 p-1 mx-4 mt-28 cursor-pointer">
+                <button
+                  className="bg-white font-bold text-xl text-green-600 border rounded-md w-28 p-1 mx-4 mt-28 cursor-pointer"
+                  onClick={() => handleAddItem(item)}
+                >
                   ADD
                 </button>
               </div>

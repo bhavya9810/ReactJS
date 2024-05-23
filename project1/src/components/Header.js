@@ -5,6 +5,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Sign In");
@@ -13,6 +14,9 @@ const Header = () => {
   console.log({ loggedInUser });
   // let btnName = "Login";
 
+  //subscribing to the store using a selector (useSelector)
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   const onlineStatus = useOnlineStatus();
   // console.log(onlineStatus);
   // onlineStatus ? (statusOnline = "green") : (statusOnline = "red");
@@ -51,7 +55,7 @@ const Header = () => {
             </li>
             <li className="px-3 cursor-pointer	">
               <Link className="header-items" to="/checkout">
-                Cart
+                Cart ({cartItems.length} items)
               </Link>
             </li>
             <li className="px-3 cursor-pointer	">

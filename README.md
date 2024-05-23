@@ -32,4 +32,13 @@ All about react and its practice-projects
   -Functional component(new way to creating component)
 
 - Functional component is just a javascript function
--
+
+#Redux-toolkit
+
+- How to write data in Redux Store
+
+Let's take an example of add to cart functionality. When we click on add to cart button it dispatches an action which calls a reducer function which modifies/updates the slice of the redux store. This i how we can write in our redux store.
+
+- How to read data from Redux store
+
+we will use selector here and that selector updates changes in our redux store. This phenomena is called Subscribing to the store.
